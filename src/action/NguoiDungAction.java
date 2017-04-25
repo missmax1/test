@@ -39,7 +39,7 @@ public class NguoiDungAction extends Action{
 		if(nguoiDungBO.checkLogin(tenDangNhap, matKhau)){				//kiem tra neu chinh xac
 			return mapping.findForward("thanhCong");
 		} else {														//neu khong chinh xac
-			nguoiDungForm.setThongBao("Đăng nhập không thành công");
+			nguoiDungForm.setThongBao("Đăng nhập không thành công!!!!!!!!!!!");
 			return mapping.findForward("thatBai");
 		}
 	}
